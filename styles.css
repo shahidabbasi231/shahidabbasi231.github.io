@@ -1,0 +1,7 @@
+.profile-banner {
+    background-image: url('assets/assets/images/headshot.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
