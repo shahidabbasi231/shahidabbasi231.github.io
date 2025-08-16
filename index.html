@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>Shahid Abbasi - QHSE Coordinator & Transportation Safety Leader</title>
+    <title>Muhammad Shahid Abbasi - QHSE Coordinator & Transportation Safety Leader</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         
@@ -166,239 +167,523 @@
             border-radius: 50%;
             box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
         }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .experience-card {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .certification-badge {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .certification-badge:hover {
+            transform: scale(1.05);
+        }
+
+        .language-level {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .performance-metric {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+            margin: 8px;
+        }
+
+        .kpi-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(102, 126, 234, 0.95);
+            backdrop-filter: blur(20px);
+        }
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-500 to-purple-600">
+    
+    <!-- Navigation -->
+    <nav class="nav-sticky py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center space-x-6">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#performance" class="nav-link">Performance</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container mx-auto px-4 py-8 max-w-7xl">
         
         <!-- Header Section -->
-        <header class="glass-effect rounded-3xl p-8 mb-8 text-center relative overflow-hidden">
+        <header id="home" class="glass-effect rounded-3xl p-8 mb-8 text-center relative overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 via-blue-500 to-green-500 pulse-animation"></div>
             
             <div class="mb-6 floating-animation">
                 <img src="https://static-us-img.skywork.ai/prod/analysis/2025-08-03/8410810201710836697/1952083888379830272_d22b2a37ac920e8fe9661916383f58cd.jpg" 
-                     alt="Shahid Abbasi - QHSE Coordinator" 
+                     alt="Muhammad Shahid Abbasi - QHSE Coordinator" 
                      class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-white shadow-2xl hover-scale">
             </div>
             
-            <h1 class="text-5xl font-bold mb-4 gradient-text slide-in-left">Shahid Abbasi</h1>
-            <h2 class="text-2xl text-gray-600 mb-4 slide-in-right">QHSE Coordinator & Transportation Safety Leader</h2>
-            <p class="text-lg text-gray-700 italic mb-6 fade-in-up">"Leading Safety Excellence Through Innovation & Compliance"</p>
+            <h1 class="text-5xl font-bold mb-4 gradient-text slide-in-left">Muhammad Shahid Abbasi</h1>
+            <h2 class="text-2xl text-gray-600 mb-4 slide-in-right">QHSE Coordinator & Certified Driver Assessor</h2>
+            <h3 class="text-xl text-gray-500 mb-6 fade-in-up">Transportation Risk Specialist</h3>
             
-            <div class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full font-semibold">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                </svg>
-                Dammam, Eastern Province, Saudi Arabia
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <p class="font-semibold">Dammam, Saudi Arabia</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone text-2xl mb-2"></i>
+                    <p class="font-semibold">+966 56 188 5549</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope text-2xl mb-2"></i>
+                    <p class="font-semibold">shahidabbasi231@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-linkedin text-2xl mb-2"></i>
+                    <p class="font-semibold">LinkedIn Profile</p>
+                </div>
             </div>
+            
+            <p class="text-lg text-gray-700 italic mb-6 fade-in-up">"Leading Safety Excellence Through Innovation & Compliance"</p>
         </header>
 
-        <!-- Statistics Section -->
+        <!-- Professional Summary -->
+        <section id="about" class="glass-effect rounded-3xl p-8 mb-8">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center text-white text-xl">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3 class="text-3xl font-bold gradient-text">Professional Summary</h3>
+            </div>
+            <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
+                <p><strong>Results-driven QHSE Coordinator</strong> with <strong>10+ years' experience</strong> driving safety performance, regulatory compliance, and cultural transformation in high-risk oil & gas and logistics environments. Proven ability to govern <strong>300+ heavy trucks</strong> across <strong>6+ long-term contractors</strong>, design KPI frameworks tied to contractual enforcement, and deliver AI-driven driver behavior analytics.</p>
+                
+                <p>As a dedicated QHSE Coordinator and Certified Driver Assessor at NESR, I lead strategic oversight of transportation safety across complex logistics networks. My mission extends beyond compliance—I cultivate a culture of safety excellence that transforms operational standards through innovative integration of traditional safety protocols with cutting-edge technologies.</p>
+                
+                <p>Holds <strong>Defensive Driving Train-the-Trainer</strong>, <strong>Transportation Risk Assessment</strong>, and <strong>Workplace Safety & Health Diploma</strong> certifications. Known for turning safety from a procedural requirement into a core operational value, leveraging expertise in AI, Large Language Models (LLM), machine learning, and risk assessment to enhance driver behavior monitoring, streamline training delivery, and strengthen KPI accountability.</p>
+                
+                <p class="font-semibold text-blue-600">Whether conducting driver assessments in remote desert locations, auditing contractor operations, or developing innovative HSE policies, my commitment remains unwavering: to elevate safety from a regulatory requirement to a standard of operational excellence that supports long-term organizational resilience in high-stakes environments.</p>
+            </div>
+        </section>
+
+        <!-- Performance Statistics -->
         <section class="glass-effect rounded-3xl p-8 mb-8">
-            <h3 class="text-3xl font-bold text-center mb-8 gradient-text">Safety Impact Statistics</h3>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl">
-                    <div class="stat-counter" data-target="300">0</div>
-                    <p class="text-gray-600 font-semibold">Heavy Trucks Managed</p>
+            <h3 class="text-3xl font-bold text-center mb-8 gradient-text">
+                <i class="fas fa-chart-line mr-3"></i>Performance Impact Statistics
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="performance-metric">
+                    <div class="stat-counter text-white" data-target="300">0</div>
+                    <p class="text-white font-semibold">Heavy Trucks Managed</p>
+                    <p class="text-green-100 text-sm">Across 6+ LTC Fleets</p>
                 </div>
-                <div class="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl">
-                    <div class="stat-counter" data-target="95">0</div>
-                    <p class="text-gray-600 font-semibold">Safety Compliance %</p>
+                <div class="performance-metric">
+                    <div class="stat-counter text-white" data-target="30">0</div>
+                    <p class="text-white font-semibold">Incident Reduction %</p>
+                    <p class="text-green-100 text-sm">At ARASCO (2021-2024)</p>
                 </div>
-                <div class="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl">
-                    <div class="stat-counter" data-target="1200">0</div>
-                    <p class="text-gray-600 font-semibold">Driver Assessments</p>
+                <div class="performance-metric">
+                    <div class="stat-counter text-white" data-target="3">0</div>
+                    <p class="text-white font-semibold">Daily Assessments</p>
+                    <p class="text-green-100 text-sm">Driver Evaluations</p>
                 </div>
-                <div class="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl">
-                    <div class="stat-counter" data-target="6">0</div>
-                    <p class="text-gray-600 font-semibold">LTC Fleets Supervised</p>
+                <div class="performance-metric">
+                    <div class="stat-counter text-white" data-target="98">0</div>
+                    <p class="text-white font-semibold">Compliance Rate %</p>
+                    <p class="text-green-100 text-sm">Safety Standards</p>
                 </div>
             </div>
         </section>
 
-        <!-- Main Content Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        <!-- Core Competencies -->
+        <section id="skills" class="glass-effect rounded-3xl p-8 mb-8">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center text-white text-xl">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3 class="text-3xl font-bold gradient-text">Core Competencies</h3>
+            </div>
             
-            <!-- Professional Summary -->
-            <div class="lg:col-span-2 glass-effect rounded-3xl p-8">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center text-white text-xl">
-                        👨‍💼
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">HSE Management & Compliance</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                        <span class="skill-tag">HSE Management Systems (ISO/OHS)</span>
+                        <span class="skill-tag">Transportation Risk Assessment</span>
+                        <span class="skill-tag">KPI Design & Contractor Governance</span>
+                        <span class="skill-tag">Incident Investigation & RCA</span>
+                        <span class="skill-tag">Emergency Response Planning</span>
+                        <span class="skill-tag">Occupational Safety Standards</span>
                     </div>
-                    <h3 class="text-3xl font-bold gradient-text">Professional Summary</h3>
                 </div>
-                <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
-                    <p>As a QHSE Coordinator and Certified Driver Assessor at NESR KSA, I lead strategic oversight of transportation safety across six long-term contractor (LTC) fleets, each operating 50+ heavy trucks. My mission extends beyond compliance—I cultivate a culture of safety excellence that transforms operational standards.</p>
-                    <p>With advanced certifications in QHSE and a data-driven approach, I integrate cutting-edge technology, behavioral science, and AI-powered analytics into comprehensive safety frameworks. My methodology combines proactive audits with real-time coaching, establishing KPI accountability that drives measurable results.</p>
-                    <p class="font-semibold text-blue-600">Whether conducting driver assessments in remote desert locations, auditing contractor operations, or developing innovative HSE policies, my commitment remains unwavering: to elevate safety from a regulatory requirement to a standard of operational excellence.</p>
-                </div>
-            </div>
-
-            <!-- Key Achievements -->
-            <div class="glass-effect rounded-3xl p-8">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-white text-xl">
-                        🏆
-                    </div>
-                    <h3 class="text-3xl font-bold gradient-text">Key Achievements</h3>
-                </div>
-                <div class="space-y-4">
-                    <div class="flex items-start gap-3">
-                        <span class="achievement-badge">2024</span>
-                        <p class="text-gray-700">Reduced fleet incident rates by 35% through implementation of behavioral safety programs</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="achievement-badge">2023</span>
-                        <p class="text-gray-700">Developed AI-integrated safety monitoring system for real-time risk assessment</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="achievement-badge">2022</span>
-                        <p class="text-gray-700">Achieved 98% compliance rate across all supervised LTC operations</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="achievement-badge">2021</span>
-                        <p class="text-gray-700">Certified as Defensive Driving Train the Trainer by University of Wyoming IADC</p>
+                
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Technology & Innovation</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                        <span class="skill-tag">AI / ML Safety Analytics</span>
+                        <span class="skill-tag">Predictive Risk Modelling</span>
+                        <span class="skill-tag">Driver Behavior Analytics</span>
+                        <span class="skill-tag">Training Design & Delivery</span>
+                        <span class="skill-tag">Policy Development</span>
+                        <span class="skill-tag">Data-Driven Decision Making</span>
                     </div>
                 </div>
             </div>
-
-            <!-- Key Focus Areas -->
-            <div class="glass-effect rounded-3xl p-8">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center text-white text-xl">
-                        🎯
-                    </div>
-                    <h3 class="text-3xl font-bold gradient-text">Core Focus Areas</h3>
-                </div>
-                <div class="grid grid-cols-1 gap-4">
-                    <div class="p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border-l-4 border-blue-500 hover-scale">
-                        <h4 class="font-semibold text-blue-600 mb-2">Driver Behavior Analytics</h4>
-                        <p class="text-gray-600 text-sm">Advanced commentary evaluations and behavioral analysis (3+ assessments daily)</p>
-                    </div>
-                    <div class="p-4 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border-l-4 border-green-500 hover-scale">
-                        <h4 class="font-semibold text-green-600 mb-2">Training Excellence</h4>
-                        <p class="text-gray-600 text-sm">Monthly comprehensive training delivery across remote operational bases</p>
-                    </div>
-                    <div class="p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border-l-4 border-purple-500 hover-scale">
-                        <h4 class="font-semibold text-purple-600 mb-2">KPI Development</h4>
-                        <p class="text-gray-600 text-sm">Enforceable safety KPIs with structured penalties for non-compliance</p>
-                    </div>
-                    <div class="p-4 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border-l-4 border-orange-500 hover-scale">
-                        <h4 class="font-semibold text-orange-600 mb-2">AI Integration</h4>
-                        <p class="text-gray-600 text-sm">Cutting-edge AI and data science integration for predictive safety analytics</p>
-                    </div>
+            
+            <div class="mt-8">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Specialized Certifications</h4>
+                <div class="flex flex-wrap gap-3">
+                    <span class="certification-badge">
+                        <i class="fas fa-car mr-2"></i>Defensive Driving Train-the-Trainer
+                    </span>
+                    <span class="certification-badge">
+                        <i class="fas fa-shield-alt mr-2"></i>Transportation Risk Assessment
+                    </span>
+                    <span class="certification-badge">
+                        <i class="fas fa-hard-hat mr-2"></i>Workplace Safety & Health Diploma
+                    </span>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Professional Experience -->
-        <section class="glass-effect rounded-3xl p-8 mb-8">
+        <section id="experience" class="glass-effect rounded-3xl p-8 mb-8">
             <div class="flex items-center gap-4 mb-8">
                 <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center text-white text-xl">
-                    💼
+                    <i class="fas fa-briefcase"></i>
                 </div>
                 <h3 class="text-3xl font-bold gradient-text">Professional Experience</h3>
             </div>
             
-            <div class="space-y-8">
-                <div class="relative pl-8 border-l-2 border-blue-200 timeline-item">
-                    <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-2xl">
+            <!-- NESR Experience -->
+            <div class="experience-card">
+                <div class="flex items-start justify-between mb-4">
+                    <div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-2">QHSE Coordinator & Certified Driver Assessor</h4>
-                        <h5 class="text-xl text-blue-600 font-semibold mb-3">NESR (National Energy Services Reunited)</h5>
-                        <p class="text-gray-600 mb-4">June 2024 - Present | Dammam, Eastern Province, Saudi Arabia</p>
-                        <div class="space-y-2 text-gray-700">
-                            <p>• Strategic oversight of transportation safety across six LTC fleets (300+ heavy trucks)</p>
-                            <p>• Implementation of behavioral safety programs resulting in 35% incident reduction</p>
-                            <p>• Development of AI-powered safety monitoring and predictive analytics systems</p>
-                            <p>• Conduct daily driver assessments and monthly training programs across remote bases</p>
-                            <p>• Author safety policies and lead incident investigations with root cause analysis</p>
-                        </div>
+                        <h5 class="text-xl text-blue-600 font-semibold mb-2">NESR (National Energy Services Reunited)</h5>
+                        <p class="text-gray-600 mb-2">Dammam, Eastern Province, Saudi Arabia</p>
+                        <p class="text-sm text-gray-500">June 2024 – Present (1 year, 3 months)</p>
                     </div>
+                    <div class="achievement-badge">Current Role</div>
                 </div>
                 
-                <div class="relative pl-8 border-l-2 border-blue-200 timeline-item">
-                    <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-2xl">
+                <div class="mb-4">
+                    <p class="text-gray-700 mb-4">Leading QHSE oversight for a dynamic logistics ecosystem with 300+ heavy trucks and six major long-term contractors, spearheading safety performance through innovative compliance enforcement and cultural transformation.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h6 class="font-semibold text-gray-800 mb-3">Key Achievements:</h6>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Led QHSE oversight for 300+ heavy trucks across 6 contractors with KPI-linked contractual penalties</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Designed AI-assisted KPI framework, improving contractor accountability and reducing repeated non-compliance incidents</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Implemented behavioral safety programs resulting in measurable incident reduction</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h6 class="font-semibold text-gray-800 mb-3">Daily Responsibilities:</h6>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-tasks text-blue-500 mt-1"></i>
+                                <span>Conduct ~3 driver assessments daily with telematics and on-road evaluations</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-tasks text-blue-500 mt-1"></i>
+                                <span>Deliver monthly driver training programs with scenario-based learning</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-tasks text-blue-500 mt-1"></i>
+                                <span>Lead incident investigations with structured root cause analysis and updated SOPs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ARASCO Experience -->
+            <div class="experience-card">
+                <div class="flex items-start justify-between mb-4">
+                    <div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-2">HSSE Specialist</h4>
-                        <h5 class="text-xl text-green-600 font-semibold mb-3">ARASCO</h5>
-                        <p class="text-gray-600 mb-4">May 2021 - May 2024 | Riyadh, Saudi Arabia</p>
-                        <div class="space-y-2 text-gray-700">
-                            <p>• Developed comprehensive safety protocols and procedures across operations</p>
-                            <p>• Achieved 98% compliance rate through systematic audit and training programs</p>
-                            <p>• Led cross-functional teams in safety culture transformation initiatives</p>
-                            <p>• Implemented risk assessment frameworks and emergency response procedures</p>
-                        </div>
+                        <h5 class="text-xl text-green-600 font-semibold mb-2">ARASCO</h5>
+                        <p class="text-gray-600 mb-2">Riyadh, Saudi Arabia</p>
+                        <p class="text-sm text-gray-500">May 2021 – May 2024 (3 years, 1 month)</p>
+                    </div>
+                    <div class="achievement-badge">30% Incident Reduction</div>
+                </div>
+                
+                <div class="mb-4">
+                    <p class="text-gray-700 mb-4">Elevated safety standards across agricultural and logistics operations, focusing on compliance, risk reduction, and cultural integration of HSSE principles.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h6 class="font-semibold text-gray-800 mb-3">Major Achievements:</h6>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-trophy text-yellow-500 mt-1"></i>
+                                <span>Achieved 30% incident rate reduction via targeted audits, risk assessments, and corrective actions</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-trophy text-yellow-500 mt-1"></i>
+                                <span>Developed and delivered custom training modules for logistics and site teams</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-trophy text-yellow-500 mt-1"></i>
+                                <span>Conducted comprehensive HSSE program governance across all organizational levels</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h6 class="font-semibold text-gray-800 mb-3">Core Functions:</h6>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-clipboard-check text-purple-500 mt-1"></i>
+                                <span>Performed regular evaluations and audits with targeted interventions</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-clipboard-check text-purple-500 mt-1"></i>
+                                <span>Partnered with diverse teams to embed HSSE standards into core operations</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-clipboard-check text-purple-500 mt-1"></i>
+                                <span>Oversaw investigations and reporting processes with actionable insights</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills & Certifications -->
+        <!-- Education & Languages -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             
-            <!-- Core Competencies -->
-            <div class="glass-effect rounded-3xl p-8">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center text-white text-xl">
-                        ⚡
-                    </div>
-                    <h3 class="text-3xl font-bold gradient-text">Core Competencies</h3>
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <span class="skill-tag">QHSE Management</span>
-                    <span class="skill-tag">Driver Assessment</span>
-                    <span class="skill-tag">Transportation Safety</span>
-                    <span class="skill-tag">Compliance Management</span>
-                    <span class="skill-tag">Behavioral Safety</span>
-                    <span class="skill-tag">Risk Assessment</span>
-                    <span class="skill-tag">Incident Investigation</span>
-                    <span class="skill-tag">Policy Development</span>
-                    <span class="skill-tag">AI Integration</span>
-                    <span class="skill-tag">Data Analytics</span>
-                    <span class="skill-tag">Training Delivery</span>
-                    <span class="skill-tag">Audit Management</span>
-                </div>
-            </div>
-
-            <!-- Education & Certifications -->
+            <!-- Education -->
             <div class="glass-effect rounded-3xl p-8">
                 <div class="flex items-center gap-4 mb-6">
                     <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white text-xl">
-                        🎓
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3 class="text-3xl font-bold gradient-text">Education & Certifications</h3>
+                    <h3 class="text-3xl font-bold gradient-text">Education</h3>
                 </div>
                 <div class="space-y-4">
-                    <div class="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl">
-                        <h4 class="font-bold text-gray-800">University of Karachi</h4>
-                        <p class="text-gray-600">Higher Education Degree</p>
+                    <div class="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border-l-4 border-blue-500">
+                        <h4 class="font-bold text-gray-800 text-lg">Karachi University</h4>
+                        <p class="text-gray-600">Bachelor's Degree</p>
+                        <p class="text-sm text-gray-500">Graduated: 2007</p>
+                        <p class="text-sm text-gray-600 mt-2">Focused on building foundational knowledge applicable to professional development in safety and management fields.</p>
                     </div>
-                    <div class="p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl">
-                        <h4 class="font-bold text-gray-800">Transportation Risk Assessment</h4>
-                        <p class="text-gray-600">Eastern Institute of Technical Skills</p>
+                    <div class="p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border-l-4 border-green-500">
+                        <h4 class="font-bold text-gray-800 text-lg">Government High School Bakote</h4>
+                        <p class="text-gray-600">Secondary Education, General Studies</p>
+                        <p class="text-sm text-gray-500">1994 – 1997</p>
+                        <p class="text-sm text-gray-600 mt-2">Completed secondary schooling with emphasis on core academic subjects.</p>
                     </div>
-                    <div class="p-4 bg-gradient-to-r from-purple-50 to-violet-50 rounded-xl">
-                        <h4 class="font-bold text-gray-800">Defensive Driving Train the Trainer</h4>
-                        <p class="text-gray-600">University of Wyoming IADC</p>
-                        <p class="text-sm text-gray-500">Credential ID: DIT000339076 | Nov 2021</p>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="glass-effect rounded-3xl p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center text-white text-xl">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold gradient-text">Languages</h3>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-center justify-between p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl">
+                        <div>
+                            <h4 class="font-bold text-gray-800">English</h4>
+                            <p class="text-gray-600 text-sm">Technical discussions, report writing, training facilitation</p>
+                        </div>
+                        <span class="language-level">Professional</span>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Urdu & Punjabi</h4>
+                            <p class="text-gray-600 text-sm">Mother tongue proficiency</p>
+                        </div>
+                        <span class="language-level">Native</span>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Arabic</h4>
+                            <p class="text-gray-600 text-sm">Workplace communication in Saudi Arabia</p>
+                        </div>
+                        <span class="language-level">Working</span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Performance Dashboard Preview -->
+        <section id="performance" class="glass-effect rounded-3xl p-8 mb-8">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center text-white text-xl">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h3 class="text-3xl font-bold gradient-text">Performance Dashboard</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="kpi-card border-l-4 border-blue-500">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">14</div>
+                    <h4 class="text-lg font-semibold text-gray-800">Months</h4>
+                    <p class="text-sm text-gray-600">Current Role Duration</p>
+                </div>
+                <div class="kpi-card border-l-4 border-green-500">
+                    <div class="text-3xl font-bold text-green-600 mb-2">2,519</div>
+                    <h4 class="text-lg font-semibold text-gray-800">Total Hours</h4>
+                    <p class="text-sm text-gray-600">Logged Performance</p>
+                </div>
+                <div class="kpi-card border-l-4 border-yellow-500">
+                    <div class="text-3xl font-bold text-yellow-600 mb-2">9.88</div>
+                    <h4 class="text-lg font-semibold text-gray-800">Daily Average</h4>
+                    <p class="text-sm text-gray-600">Hours per Day</p>
+                </div>
+                <div class="kpi-card border-l-4 border-purple-500">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">98.8%</div>
+                    <h4 class="text-lg font-semibold text-gray-800">Efficiency</h4>
+                    <p class="text-sm text-gray-600">Performance Rate</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border-l-4 border-blue-500">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-car text-blue-600 text-2xl"></i>
+                        <h4 class="text-lg font-semibold text-gray-800">Driving Assessments</h4>
+                    </div>
+                    <div class="text-2xl font-bold text-blue-600 mb-1">61%</div>
+                    <p class="text-sm text-gray-600">1,530 hours | 6.1 hrs/day average</p>
+                </div>
+                
+                <div class="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl border-l-4 border-green-500">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-users-cog text-green-600 text-2xl"></i>
+                        <h4 class="text-lg font-semibold text-gray-800">LTC Management</h4>
+                    </div>
+                    <div class="text-2xl font-bold text-green-600 mb-1">30%</div>
+                    <p class="text-sm text-gray-600">765 hours | Coordination & meetings</p>
+                </div>
+                
+                <div class="p-6 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl border-l-4 border-yellow-500">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-file-alt text-yellow-600 text-2xl"></i>
+                        <h4 class="text-lg font-semibold text-gray-800">Administrative</h4>
+                    </div>
+                    <div class="text-2xl font-bold text-yellow-600 mb-1">5%</div>
+                    <p class="text-sm text-gray-600">128 hours | Reports & documentation</p>
+                </div>
+                
+                <div class="p-6 bg-gradient-to-br from-red-50 to-red-100 rounded-2xl border-l-4 border-red-500">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-search text-red-600 text-2xl"></i>
+                        <h4 class="text-lg font-semibold text-gray-800">LTC Audits</h4>
+                    </div>
+                    <div class="text-2xl font-bold text-red-600 mb-1">4%</div>
+                    <p class="text-sm text-gray-600">96 hours | Planning & execution</p>
+                </div>
+            </div>
+        </section>
 
         <!-- Testimonials Section -->
         <section class="glass-effect rounded-3xl p-8 mb-8">
             <div class="flex items-center gap-4 mb-8">
                 <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center text-white text-xl">
-                    💬
+                    <i class="fas fa-quote-left"></i>
                 </div>
                 <h3 class="text-3xl font-bold gradient-text">Professional Testimonials</h3>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="testimonial-card p-6 rounded-2xl">
-                    <p class="text-gray-700 italic mb-4">"Shahid's innovative approach to safety management has transformed our fleet operations. His integration of AI analytics with traditional safety protocols has resulted in unprecedented compliance rates."</p>
+                    <p class="text-gray-700 italic mb-4">"Shahid's innovative approach to safety management has transformed our fleet operations. His integration of AI analytics with traditional safety protocols has resulted in unprecedented compliance rates and measurable incident reduction."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
                             SA
                         </div>
                         <div>
@@ -409,9 +694,9 @@
                 </div>
                 
                 <div class="testimonial-card p-6 rounded-2xl">
-                    <p class="text-gray-700 italic mb-4">"His expertise in driver assessment and behavioral safety has been instrumental in reducing our incident rates. Shahid brings both technical knowledge and practical solutions to complex safety challenges."</p>
+                    <p class="text-gray-700 italic mb-4">"His expertise in driver assessment and behavioral safety has been instrumental in reducing our incident rates. Shahid brings both technical knowledge and practical solutions to complex safety challenges, making him an invaluable team member."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
                             MF
                         </div>
                         <div>
@@ -424,99 +709,114 @@
         </section>
 
         <!-- Contact & CTA Section -->
-        <section class="glass-effect rounded-3xl p-8 text-center">
+        <section id="contact" class="glass-effect rounded-3xl p-8 text-center">
             <div class="mb-8">
-                <h3 class="text-4xl font-bold gradient-text mb-4">Let's Connect</h3>
+                <h3 class="text-4xl font-bold gradient-text mb-4">
+                    <i class="fas fa-handshake mr-3"></i>Let's Connect
+                </h3>
                 <p class="text-xl text-gray-700 mb-8">Ready to elevate your transportation safety standards? Let's discuss how we can transform your operations together.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div class="flex items-center justify-center gap-3 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl">
-                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                    </svg>
-                    <a href="mailto:shahidabbasi231@gmail.com" class="font-semibold text-blue-600 hover:text-blue-800">shahidabbasi231@gmail.com</a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="flex items-center justify-center gap-3 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl hover-scale">
+                    <i class="fas fa-envelope text-2xl text-blue-600"></i>
+                    <div class="text-left">
+                        <div class="font-semibold text-gray-800">Email</div>
+                        <a href="mailto:shahidabbasi231@gmail.com" class="text-blue-600 hover:text-blue-800 text-sm">shahidabbasi231@gmail.com</a>
+                    </div>
                 </div>
-                <div class="flex items-center justify-center gap-3 p-4 bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl">
-                    <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path>
-                    </svg>
-                    <a href="https://wa.me/966561885549" target="_blank" class="font-semibold text-green-600 hover:text-green-800">+966 56 188 5549</a>
+                <div class="flex items-center justify-center gap-3 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl hover-scale">
+                    <i class="fab fa-whatsapp text-2xl text-green-600"></i>
+                    <div class="text-left">
+                        <div class="font-semibold text-gray-800">WhatsApp</div>
+                        <a href="https://wa.me/966561885549" target="_blank" class="text-green-600 hover:text-green-800 text-sm">+966 56 188 5549</a>
+                    </div>
                 </div>
-                <div class="flex items-center justify-center gap-3 p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl">
-                    <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
-                    </svg>
-                    <a href="https://linkedin.com/in/shahid-abbasi" target="_blank" class="font-semibold text-purple-600 hover:text-purple-800">LinkedIn Profile</a>
+                <div class="flex items-center justify-center gap-3 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl hover-scale">
+                    <i class="fab fa-linkedin text-2xl text-purple-600"></i>
+                    <div class="text-left">
+                        <div class="font-semibold text-gray-800">LinkedIn</div>
+                        <a href="https://linkedin.com/in/shahid-abbasi" target="_blank" class="text-purple-600 hover:text-purple-800 text-sm">Professional Profile</a>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-3 p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl hover-scale">
+                    <i class="fas fa-globe text-2xl text-orange-600"></i>
+                    <div class="text-left">
+                        <div class="font-semibold text-gray-800">Portfolio</div>
+                        <a href="https://shahidabbasi231.github.io" target="_blank" class="text-orange-600 hover:text-orange-800 text-sm">View Projects</a>
+                    </div>
                 </div>
             </div>
             
             <div class="space-y-4">
-                <a href="mailto:shahidabbasi231@gmail.com" class="cta-button">Schedule a Consultation</a>
-                <p class="text-gray-600">Available for QHSE consulting, safety audits, and training programs</p>
+                <a href="mailto:shahidabbasi231@gmail.com" class="cta-button">
+                    <i class="fas fa-calendar-alt mr-2"></i>Schedule a Consultation
+                </a>
+                <p class="text-gray-600">Available for QHSE consulting, safety audits, training programs, and AI-driven safety solutions</p>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="glass-effect rounded-3xl p-6 mt-8 text-center">
             <div class="section-divider"></div>
-            <p class="text-gray-600">© 2024 Shahid Abbasi - QHSE Coordinator & Transportation Safety Leader</p>
-            <p class="text-sm text-gray-500 mt-2">Committed to Excellence in Safety, Quality, Health & Environment</p>
+            <p class="text-gray-600 mb-2">© 2025 Muhammad Shahid Abbasi - QHSE Coordinator & Transportation Safety Leader</p>
+            <p class="text-sm text-gray-500 mb-4">Committed to Excellence in Safety, Quality, Health & Environment</p>
+            <div class="flex justify-center space-x-6 text-sm text-gray-500">
+                <span><i class="fas fa-shield-alt mr-1"></i>10+ Years Experience</span>
+                <span><i class="fas fa-truck mr-1"></i>300+ Trucks Managed</span>
+                <span><i class="fas fa-chart-line mr-1"></i>30% Incident Reduction</span>
+                <span><i class="fas fa-certificate mr-1"></i>Multiple Certifications</span>
+            </div>
         </footer>
     </div>
 
     <script>
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            initializePage();
+        });
+
+        function initializePage() {
+            animateCounters();
+            setupSmoothScrolling();
+            setupHoverEffects();
+        }
+
         // Animated Counter
         function animateCounters() {
             const counters = document.querySelectorAll('.stat-counter');
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const increment = target / 100;
-                let current = 0;
-                
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        current = target;
-                        clearInterval(timer);
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const increment = target / 100;
+                        let current = 0;
+                        
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(timer);
+                            }
+                            counter.textContent = Math.floor(current) + (target === 30 || target === 98 ? '%' : '');
+                        }, 20);
+                        
+                        observer.unobserve(counter);
                     }
-                    counter.textContent = Math.floor(current) + (target === 95 ? '%' : '');
-                }, 20);
-            });
+                });
+            }, observerOptions);
+
+            counters.forEach(counter => observer.observe(counter));
         }
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                    
-                    // Trigger counter animation when stats section is visible
-                    if (entry.target.querySelector('.stat-counter')) {
-                        animateCounters();
-                    }
-                }
-            });
-        }, observerOptions);
-
-        // Observe all animated elements
-        document.addEventListener('DOMContentLoaded', function() {
-            const animatedElements = document.querySelectorAll('.glass-effect');
-            animatedElements.forEach(el => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(30px)';
-                el.style.transition = 'all 0.8s ease-out';
-                observer.observe(el);
-            });
-
-            // Smooth scrolling for anchor links
+        // Smooth scrolling for navigation
+        function setupSmoothScrolling() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -529,7 +829,10 @@
                     }
                 });
             });
+        }
 
+        // Setup hover effects
+        function setupHoverEffects() {
             // Add hover effects to skill tags
             const skillTags = document.querySelectorAll('.skill-tag');
             skillTags.forEach(tag => {
@@ -555,8 +858,15 @@
                     ripple.style.width = ripple.style.height = size + 'px';
                     ripple.style.left = x + 'px';
                     ripple.style.top = y + 'px';
-                    ripple.classList.add('ripple');
+                    ripple.style.position = 'absolute';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.background = 'rgba(255, 255, 255, 0.3)';
+                    ripple.style.transform = 'scale(0)';
+                    ripple.style.animation = 'ripple 0.6s linear';
+                    ripple.style.pointerEvents = 'none';
                     
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
                     this.appendChild(ripple);
                     
                     setTimeout(() => {
@@ -564,7 +874,7 @@
                     }, 600);
                 });
             }
-        });
+        }
 
         // Add parallax effect to background
         window.addEventListener('scroll', () => {
@@ -573,6 +883,18 @@
             const speed = scrolled * 0.5;
             parallax.style.backgroundPosition = `center ${speed}px`;
         });
+
+        // Add CSS for ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
     </script>
 </body>
 </html>
